@@ -1,0 +1,31 @@
+{
+  "name": "hello-express",
+  "version": "1.0.0",
+  "description": "Node and express playground",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfremedpal/hello-express.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "playground"
+  ],
+  "author": "Alfredo Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfremedpal/hello-express/issues"
+  },
+  "homepage": "https://github.com/alfremedpal/hello-express#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
