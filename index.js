@@ -1,11 +1,16 @@
-import express from 'express';
+import express from 'express'
+import './env.js'
 
-const app = express();
-const PORT = 5000;
+import productsRoutes from './routes/products.js'
+
+const app = express()
+const PORT = 5000
+
+app.use('/products', productsRoutes)
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'oks'
+        message: 'ok'
     })
 })
 

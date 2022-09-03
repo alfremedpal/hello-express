@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/alfremedpal/hello-express#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "pg-promise": "^10.12.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
