@@ -11,6 +11,18 @@ In order to start playing with this project on your local machine follow these s
 3. Install any dependencies running `npm install`
 4. Start the app with `npm start`
 
+### Requirements
+
+Minimum:
+
+- A PostgreSQL database
+  - Connection string defined in `.env` file
+  - Table named `products`
+  - Identifier column named `id`
+
+- A Redis instance
+  - On default port
+
 ## Tips and reminders
 
 These are some personal tips and reminders on what I should take into consideration when building new projects with node and/or express.
