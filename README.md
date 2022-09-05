@@ -11,20 +11,26 @@ In order to start playing with this project on your local machine follow these s
 3. Install any dependencies running `npm install`
 4. Start the app with `npm start`
 
+### Docker
+
+1. Build the image with `docker build . -t my-user/my-image-name`
+2. Start a container from the image using `docker run --name my-container-name -d -p 5000:5000 --env-file ./.env my-user/my-image-name`
+
 ### Requirements
 
 Minimum:
 
 - A PostgreSQL database
-  - Connection string defined in `.env` file
+  - Connection string defined in `.env` file as `DB_STRING`
   - Table named `products`
   - Identifier column named `id`
 
 - A Redis instance
-  - On default port
+  - Connection string defined in `.env` file as `REDIS_STRING`
 
 ## Tips and reminders
 
 These are some personal tips and reminders on what I should take into consideration when building new projects with node and/or express.
 
 - Don't forget to add `"type": "module"` to your `package.json` to specify all `.js` files are ES modules
+- If running with Docker use `host.docker.internal` instead of `localhost` to access resources outside of your container
